@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+
+--font-family-sans: "Rubik", sans-serif;
+  --color-primary: #5368df;
+  --color-soft-red: #fa5959;
+  --color-navy: #252b46;
+  --color-grayish: #9194a2;
+  --color-light-bg: #f7f7f7;
+}

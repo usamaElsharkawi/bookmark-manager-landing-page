@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Generated Files
+CSS/output.css
+
+# System Files
+.DS_Store
+Thumbs.db
