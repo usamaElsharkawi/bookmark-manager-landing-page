@@ -16,5 +16,99 @@
     <link rel="stylesheet" href="./CSS/output.css" />
     <title>Bookmark — A Simple Bookmark Manager</title>
   </head>
-  <body></body>
+  <body class="overflow-x-hidden">
+    <header>
+      <nav class="container relative mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between my-6">
+          <!-- Logo -->
+          <div class="z-30">
+            <img src="./images/logo-bookmark.svg" alt="" id="logo" />
+          </div>
+
+          <!-- Menu Items (Desktop) -->
+          <div
+            class="hidden items-center space-x-10 uppercase text-grayish md:flex"
+          >
+            <a
+              href="#features"
+              class="tracking-widest hover:text-soft-red transition duration-300"
+              >Features</a
+            >
+            <a
+              href="#download"
+              class="tracking-widest hover:text-soft-red transition duration-300"
+              >Pricing</a
+            >
+            <a
+              href="#faq"
+              class="tracking-widest hover:text-soft-red transition duration-300"
+              >Contact</a
+            >
+            <a
+              href="#"
+              class="px-8 py-2 text-white bg-soft-red border-2 border-soft-red rounded-lg shadow-md hover:text-soft-red hover:bg-white transition duration-300"
+              >Login</a
+            >
+          </div>
+
+          <!-- Hamburger Icon (Mobile) -->
+          <!-- We will add this in the next step! -->
+        </div>
+      </nav>
+    </header>
+    <section id="hero">
+      <!-- Container For Image & Content -->
+      <div
+        class="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0"
+      >
+        <!-- Content -->
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+          <h1
+            class="text-3xl font-semibold text-center text-navy lg:text-6xl lg:text-left"
+          >
+            A Simple Bookmark Manager
+          </h1>
+          <p
+            class="max-w-md mx-auto text-lg text-center text-grayish lg:text-2xl lg:text-left lg:mt-0 lg:mx-0"
+          >
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+
+          <!-- Buttons Container -->
+          <div
+            class="flex items-center justify-center w-full space-x-4 lg:justify-start"
+          >
+            <a
+              href="#"
+              class="p-4 text-sm font-semibold text-white bg-primary rounded shadow-md border-2 border-primary hover:bg-white hover:text-primary transition duration-300 md:text-base"
+            >
+              Get it on Chrome
+            </a>
+            <a
+              href="#"
+              class="p-4 text-sm font-semibold text-navy bg-gray-100 rounded shadow-md border-2 border-gray-100 hover:bg-white hover:text-navy hover:border-navy transition duration-300 md:text-base"
+            >
+              Get it on Firefox
+            </a>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+          <!-- The Blue Background Blob -->
+          <div
+            class="absolute bg-primary rounded-l-full h-52 w-full -bottom-10 -right-36 md:h-80 md:-right-48 lg:h-96 lg:-bottom-28"
+          ></div>
+          <img
+            src="./images/illustration-hero.svg"
+            alt=""
+            class="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
