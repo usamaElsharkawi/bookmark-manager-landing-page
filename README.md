@@ -16,28 +16,31 @@ The goal of this project is to build a responsive, performant, and visually stun
 
 ---
 
-## 🧠 Product Engineering Masterclass: Key Concepts
+## 🧠 Product Engineering Masterclass: Key Lessons
 
-### 1. Information Density
-**The Goal**: Managing how much content is shown to the user at once.
-- **Why?**: To prevent "Analysis Paralysis."
-- **How we applied it**: We implemented **Tabs** for the features section. Instead of showing three large feature panels vertically, we share the same vertical space, allowing the user to progressively disclose the information they care about.
+### Lesson 1: Cognitive Load & Bounce Rate
+There is a direct correlation between **Cognitive Load** (the mental effort required to use an interface) and **Bounce Rate** (users leaving the site).
+- **The Goal**: Minimize **Extraneous Load** (design noise) so users can focus on the product.
+- **Hick's Law**: We reduce the number of choices to speed up user decision-making.
 
-### 2. Cognitive Load (The UI Psychology)
-Cognitive Load is the "RAM of the human brain." We aim to minimize the effort required to use the interface.
+### Lesson 2: Progressive Disclosure
+We don't show everything at once. We hide complex features behind tabs or menus to make the interface feel "friendly" and less overwhelming.
+- **In this project**: Used in the **Features** section. The user only sees one feature panel at a time, lowering the "Information Density" to a manageable level.
 
-- **Intrinsic Load**: The natural difficulty of the task (e.g., bookmarking a site). We handle this by breaking features into simple, digestible steps.
-- **Extraneous Load (The Enemy)**: Wasted mental effort due to poor design. We fight this with **Consistency** and **Visual Hierarchy**.
-- **Germane Load**: The effort used to learn the UI patterns. We use familiar patterns (like underlined tabs) so the user doesn't have to "re-learn" how to navigate.
+### Lesson 3: The Staircase Effect (Attention Management)
+We implemented a staggered layout for the browser cards (using `mt-32`, `mt-64` on desktop).
+- **Goal**: To break the strict horizontal grid and guide the user's eye in a specific rhythm.
+- **Soft Disclosure**: Even though all cards are visible, the staggering creates a sequence of discovery, ensuring each card gets dedicated attention.
 
-### 3. Hick's Law & Miller's Law
-- **Hick's Law**: The time it takes to make a decision increases with the number of choices. (Fewer choices = Faster action).
-- **Miller's Law**: The average person can only keep ~7 items in their short-term memory. We keep our navigation and hero sections lean to stay within these limits.
+---
 
-### 4. Bounce Rate Relationship
-There is a direct correlation between Cognitive Load and Bounce Rate.
-- **High Friction = High Bounce**: If the UI is cluttered (High Load), users will leave within the first 5 seconds.
-- **Efficiency**: By lowering load, we make marketing more efficient, reducing the "Visual Friction Tax" on our visitors.
+### 📥 Project Components Implementation Status
+- [x] **Hero Section**: Responsive layout with signature "Right Blob" background.
+- [x] **Features Section**: Interactive tabs using JavaScript and "Left Blob" layering.
+- [x] **Download Section**: Staggered card layout (Staircase Effect) with custom SVG separators.
+- [x] **State Management**: Clean JS logic to handle UI transitions and tab states.
+- [ ] **FAQ Section**: (Next) Interactive accordion for common questions.
+- [ ] **Newsletter & Footer**: (Pending) Email validation and responsive footer.
 
 ---
 
