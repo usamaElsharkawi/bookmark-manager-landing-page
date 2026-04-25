@@ -267,10 +267,11 @@
                   class="px-6 py-3 font-semibold text-white bg-primary rounded-lg shadow-md border-2 border-primary hover:bg-white hover:text-primary transition duration-300"
                   >More Info</a
                 >
-              </div>
             </div>
           </div>
         </section>
+      </div>
+    </section>
 
     <!-- Download Section -->
     <section id="download" class="py-32">
@@ -340,6 +341,154 @@
         </div>
       </div>
     </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+      <div class="container mx-auto px-6 mb-32">
+        <h2 class="text-3xl font-semibold text-center text-navy md:text-4xl">
+          Frequently Asked Questions
+        </h2>
+        <p class="max-w-lg mx-auto mt-6 text-center text-grayish">
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+
+        <!-- Accordion Container -->
+        <div class="max-w-2xl mx-auto mt-20">
+          
+          <!-- Question 1 -->
+          <details class="group py-4 border-t border-gray-200">
+            <summary class="flex items-center justify-between cursor-pointer list-none text-navy hover:text-soft-red transition duration-300">
+              <span class="text-lg">What is Bookmark?</span>
+              <div class="transition duration-300 group-open:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+                </svg>
+              </div>
+            </summary>
+            <p class="mt-4 text-grayish leading-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus vel ex placerat, efficitur nibh sit 
+              amet, phasellus varius.
+            </p>
+          </details>
+
+          <!-- Question 2 -->
+          <details class="group py-4 border-t border-gray-200">
+            <summary class="flex items-center justify-between cursor-pointer list-none text-navy hover:text-soft-red transition duration-300">
+              <span class="text-lg">How can I request a new browser?</span>
+              <div class="transition duration-300 group-open:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+                </svg>
+              </div>
+            </summary>
+            <p class="mt-4 text-grayish leading-8">
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, gravida 
+              vitae tempus a, interdum quis neque. Cras mikestibulum tristique.
+            </p>
+          </details>
+
+          <!-- Question 3 -->
+          <details class="group py-4 border-t border-gray-200">
+            <summary class="flex items-center justify-between cursor-pointer list-none text-navy hover:text-soft-red transition duration-300">
+              <span class="text-lg">Is there a mobile app?</span>
+              <div class="transition duration-300 group-open:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+                </svg>
+              </div>
+            </summary>
+            <p class="mt-4 text-grayish leading-8">
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum 
+              dolor, ut condimentum urna vulputate eget. Cras mikestibulum tristique.
+            </p>
+          </details>
+
+          <!-- Question 4 -->
+          <details class="group py-4 border-t border-b border-gray-200">
+            <summary class="flex items-center justify-between cursor-pointer list-none text-navy hover:text-soft-red transition duration-300">
+              <span class="text-lg">What about other Chromium browsers?</span>
+              <div class="transition duration-300 group-open:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path fill="none" stroke="#5267DF" stroke-width="3" d="M1 1l8 8 8-8"/>
+                </svg>
+              </div>
+            </summary>
+            <p class="mt-4 text-grayish leading-8">
+              Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, 
+              at finibus felis. Fusce tincidunt justo eget ultricies fringilla.
+            </p>
+          </details>
+
+          <!-- CTA Button -->
+          <div class="flex justify-center mt-12">
+            <a href="#" class="px-8 py-4 font-semibold text-white bg-primary rounded shadow-md border-2 border-primary hover:bg-white hover:text-primary transition duration-300">
+              More Info
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="bg-primary py-24 mt-32">
+      <div class="container mx-auto px-6 text-center text-white">
+        <p class="uppercase tracking-[0.3em] text-sm md:text-base">
+          35,000+ already joined
+        </p>
+        <h2 class="max-w-md mx-auto mt-6 text-3xl font-semibold md:text-4xl">
+          Stay up-to-date with what we’re doing
+        </h2>
+
+        <!-- Form Container -->
+        <form class="flex flex-col items-start justify-center max-w-2xl mx-auto mt-10 space-y-6 md:flex-row md:space-y-0 md:space-x-4">
+          <div class="relative flex flex-col w-full md:flex-1">
+            <input
+              type="email"
+              required
+              placeholder="Enter your email address"
+              class="w-full px-6 py-3 text-navy bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-red transition duration-300"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full px-6 py-3 font-semibold text-white bg-soft-red rounded-lg border-2 border-soft-red hover:bg-white hover:text-soft-red transition duration-300 md:w-auto"
+          >
+            Contact Us
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-10">
+      <div class="container mx-auto px-6 flex flex-col items-center justify-between space-y-10 md:flex-row md:space-y-0">
+        
+        <!-- Logo & Links -->
+        <div class="flex flex-col items-center space-y-8 md:flex-row md:space-y-0 md:space-x-12">
+          <!-- Logo -->
+          <img src="./images/logo-bookmark-footer.svg" alt="" class="mb-1" />
+          
+          <!-- Links -->
+          <div class="flex flex-col items-center space-y-4 uppercase tracking-widest text-white text-sm md:flex-row md:space-y-0 md:space-x-8">
+            <a href="#features" class="hover:text-soft-red transition duration-300">Features</a>
+            <a href="#download" class="hover:text-soft-red transition duration-300">Pricing</a>
+            <a href="#newsletter" class="hover:text-soft-red transition duration-300">Contact</a>
+          </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="flex space-x-10">
+          <a href="#">
+            <img src="./images/icon-facebook.svg" alt="" class="f-icon hover:invert-[0.5] hover:sepia-[1] hover:saturate-[5] hover:hue-rotate-[320deg] transition duration-300" />
+          </a>
+          <a href="#">
+            <img src="./images/icon-twitter.svg" alt="" class="f-icon hover:invert-[0.5] hover:sepia-[1] hover:saturate-[5] hover:hue-rotate-[320deg] transition duration-300" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
     <script src="./JS/script.js"></script>
   </body>
 </html>
